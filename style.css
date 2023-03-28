@@ -1,0 +1,115 @@
+@import url('https://fonts.googleapis.com/css2?family=Alkatra&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Alkatra', cursive;
+}
+
+:root{
+    --color:rgb(68, 134, 239);
+}
+body{
+    background-color: rgb(87, 87, 87);
+}
+header{
+    background-color: var(--color);
+    height: 200px;
+    
+}
+#top-div{
+    margin: auto;
+    width: 50%;
+    height: 100%;
+}
+h1{
+    color: white;
+	text-align: center;
+	text-transform: uppercase;
+
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+}
+#ts{text-transform: uppercase;
+    text-shadow: -10px 8px 20px #000202;
+	font-size: 4rem;
+    text-align: center;
+}
+nav{
+    height: 30px;
+    background-color: white;
+}
+nav>div{margin: auto;
+    width: 40%;
+    height: 100%;
+    display: flex;
+}
+div>span{
+    display: flex;
+    flex-grow: 2;
+    color: #0087ca;
+    align-content: center;
+    justify-content: center;
+    text-transform: uppercase;
+}
+button{
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    background-color: white;
+    border: 0;
+    padding: 0 10px;
+    transition: all 0.3s;
+}
+button:hover{
+    background-color: var(--color);
+     color: black;
+
+}
+.hover-underline-animation {
+    display: inline-block;
+    position: relative;
+    color: #0087ca;
+    padding-bottom: 3px;
+}
+
+.hover-underline-animation:after {
+    content: '';
+    position: absolute;
+    width: 100%;
+    transform: scaleX(0);
+    height: 2px;
+    bottom: 0;
+    left: 0;
+    background-color: rgb(0, 0, 0);
+    transform-origin: bottom left;
+    transition: transform .50s ease-out;
+}
+
+.hover-underline-animation:hover:after {
+    transform: scaleX(1);
+    transform-origin: bottom left;
+}
+main{
+    height: 100%;
+}
+main>div{
+    height: 100%;
+    margin: 35px auto;
+    width: 40%;
+
+    display: flex;
+    flex-flow: row wrap;
+}
+.box{
+    
+    width: 162px;
+    background-color: rgb(87, 87, 87);
+    height: 162px;
+    margin: 20px;
+    border-radius: 20px;
+}
+.selected{
+    background-color: var(--color);
+    color: black;
+}

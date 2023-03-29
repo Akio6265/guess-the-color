@@ -113,9 +113,6 @@ main>div{
     color: black;
 }
 @media screen and (max-width: 350px){
-body{
-    background-color: rgb(56, 56, 56);}
-
     header{
         background-color: var(--color);
         height: 100px;

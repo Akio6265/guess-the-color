@@ -19,14 +19,13 @@ header{
 }
 #top-div{
     margin: auto;
-    width: 50%;
+    width: 60%;
     height: 100%;
 }
 h1{
     color: white;
 	text-align: center;
 	text-transform: uppercase;
-
     display: flex;
     flex-direction: column;
     height: 100%;
@@ -112,4 +111,40 @@ main>div{
 .selected{
     background-color: var(--color);
     color: black;
+}
+@media screen and (max-width: 350px){
+body{
+    background-color: rgb(56, 56, 56);}
+
+    header{
+        background-color: var(--color);
+        height: 100px;
+    }
+    h1{
+        font-size: 18px;
+    }
+    #ts{
+        font-size: 22px;
+    }
+    nav{
+        height: 15px;
+    }
+    nav>div{
+        width: 100%;
+    }
+    button{
+        font-size: 11px;
+    }
+    main>div{
+        margin:0px;
+        margin-top: 70px;
+        width: 100%;
+        
+    }
+
+    .box{
+        width: 68px;
+        height: 68px;
+        margin: 23px;
+    }
 }

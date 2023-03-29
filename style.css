@@ -112,7 +112,7 @@ main>div{
     background-color: var(--color);
     color: black;
 }
-@media screen and (max-width: 350px){
+@media screen and (max-width: 400px){
     header{
         background-color: var(--color);
         height: 100px;
